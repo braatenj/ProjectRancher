@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Project Rancher</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    </head>
+
+    <body>
+        <nav id="side-bar">
+            <a href="#" id="navLivestock">Livestock</a>
+            <a href="#" id="navLandUpgrades">Land Upgrades</a>
+            <a href="#" id="navRanchUpgrades">Ranch Upgrades</a>
+        </nav>
+        <div id="content">
+            <div id="resource-bar">
+                Money: <span id="resource-money">0</span>
+                Land: <span id="resource-landSummary">0/0</span>
+                Hay: <span id="resource-hay">0</span>
+            </div>
+            <div id="main-content">
+                <div id="livestock" class="section">
+                    <div id="livestock-inventory"></div>
+                    <div id="livestock-store" >
+                        <span class="section-header">Livestock Store</span>
+                        <button onClick="buyCow()" class="livestock-store-button">Buy Cow</button>
+                    </div>
+                </div>
+                
+    
+                <div id="land-upgrades" class="section">
+                    <span class='section-header'>Land Upgrades</span>
+                    <button onClick="buyLand()" id="buyLand" class="land-upgrades-button">Buy Land ($0)</button>
+                </div>
+
+                <div id="ranch-upgrades" class="section">
+                    <span class='section-header'>Ranch Upgrades</span>
+                    <button onClick="buyRanchUpgrade()" id="buyRanchUpgrade" class="ranch-upgrades-button">Upgrade Ranch</button>
+                </div>
+            </div>
+            
+    
+            <script src="scripts/index.js"></script>
+        </div>
+        
+    </body>
+</html>
